@@ -49,7 +49,8 @@ main { max-width:760px; margin:-56px auto 0; padding:0 16px 40px; position:relat
 .li svg { transition:transform .2s }
 .li:hover svg { transform:scale(1.15) }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation:none !important; transition:none !important } }
-.avatar { width:56px; height:56px; border-radius:50%; display:grid; place-items:center; background:var(--primary-soft); color:var(--primary); font-family:var(--display); font-weight:800; font-size:24px }
+.avatar { position:relative; overflow:hidden; width:64px; height:64px; border-radius:50%; display:grid; place-items:center; background:var(--primary-soft); color:var(--primary); font-family:var(--display); font-weight:800; font-size:24px }
+.avatar img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; border-radius:50% }
 .who h2 { font-family:var(--display); font-weight:700; font-size:20px; margin:0; line-height:1.4 }
 .en { margin:0; color:var(--ink-subtle); font-size:14px; text-align:right }
 .parts { list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:6px }
@@ -74,7 +75,7 @@ footer a { color:var(--primary) }
 <main>
   <div class="grid">
     <article class="card" style="--i:0">
-      <div class="avatar" aria-hidden="true">ع</div>
+      <div class="avatar" aria-hidden="true">ع<img src="photo/AlinkendIn.jpeg" alt="" loading="lazy" onerror="this.remove()"></div>
       <div class="who">
         <h2>عبدالإله الودعاني</h2>
         <p class="en" dir="ltr">Abdulelah Alwadani</p>
@@ -85,7 +86,7 @@ footer a { color:var(--primary) }
       </a>
     </article>
     <article class="card" style="--i:1">
-      <div class="avatar" aria-hidden="true">ص</div>
+      <div class="avatar" aria-hidden="true">ص<img src="photo/sLinkedIN.jpeg" alt="" loading="lazy" onerror="this.remove()"></div>
       <div class="who">
         <h2>صبحية الخضر</h2>
         <p class="en" dir="ltr">Subhiyyah Alkhedher</p>
@@ -96,7 +97,7 @@ footer a { color:var(--primary) }
       </a>
     </article>
     <article class="card" style="--i:2">
-      <div class="avatar" aria-hidden="true">ت</div>
+      <div class="avatar" aria-hidden="true">ت<img src="photo/TLinkedIn.jpeg" alt="" loading="lazy" onerror="this.remove()"></div>
       <div class="who">
         <h2>تركي الغامدي</h2>
         <p class="en" dir="ltr">Turki Alghamdi</p>
@@ -107,7 +108,7 @@ footer a { color:var(--primary) }
       </a>
     </article>
     <article class="card" style="--i:3">
-      <div class="avatar" aria-hidden="true">ف</div>
+      <div class="avatar" aria-hidden="true">ف<img src="photo/FLinkedIN.jpeg" alt="" loading="lazy" onerror="this.remove()"></div>
       <div class="who">
         <h2>فيّ الحارثي</h2>
         <p class="en" dir="ltr">Fai Alharthi</p>
